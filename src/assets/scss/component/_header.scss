@@ -1,0 +1,36 @@
+.header{
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    &-content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    .nav-list{
+        display: flex;
+        gap: 15px;
+
+        li{
+            list-style-type: none;
+
+            a{
+                color: #666;
+                font-size: 18px;
+                font-size: 20px;
+                text-decoration: none;
+
+                .header-img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            
+        }
+    }
+}

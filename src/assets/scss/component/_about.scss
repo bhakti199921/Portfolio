@@ -1,0 +1,74 @@
+.work-experience {
+  max-width: 500px;
+  width: 100%;
+
+  .designation-title {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .project-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .name-city-wrapper{
+      display: flex;
+      align-items: center;
+      color:#A7A7A7;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .date-wrapper{
+      color:#A7A7A7;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+  }
+
+  .designation-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .designation-title{
+      color:#666;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+
+    .btn-green{
+      color: #018C0F;
+      text-align: center;
+      font-size: 9px;
+      font-weight: 600;
+      border-radius: 100px;
+      background:  #D7FFE0;
+      border: none;
+      padding: 8px 20px;
+
+    }
+  }
+
+  ul {
+    li{
+      list-style-type: none;
+      padding-bottom: 15px;
+      margin-top: 15px;
+      border-bottom: 1px solid #EBEAED;
+    }
+  }
+}
+
+.aboutus{
+  .section-title{
+    font-size: 25px;
+    text-align: left;
+  }
+}
