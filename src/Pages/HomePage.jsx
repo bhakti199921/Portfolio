@@ -5,7 +5,7 @@ import "../assets/scss/_homePage.scss";
 import profileimg from "../assets/images/profile.png";
 import MyStack from "../Component/MyStack";
 import Project from "../Component/Project";
-// import Footer from "../Component/Footer";
+import Footer from "../Component/Footer";
 
 function HomePage() {
   return (
@@ -16,7 +16,7 @@ function HomePage() {
             <div className="hero-banner-content">
               <div>
                 <h2 className="hero-banner-title">
-                  Hi, <br />
+                  Hi 👋,<br />
                   My Name is ,<br />
                   <span>Bhakti</span>
                   <br />I build things for web
@@ -27,11 +27,11 @@ function HomePage() {
               </div>
             </div>
           </div>
-          <MyStack/>
-          <Project/>
         </section>
+        <MyStack/>
+        <Project/>
       </main>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }

@@ -1,10 +1,53 @@
 /* eslint-disable react/no-unescaped-entities */
 import "../assets/scss/component/_about.scss";
-import projecticon from "../assets/images/projecticon.svg";
+// import projecticon from "../assets/images/projecticon.svg";
 import calender from "../assets/images/calendar-dates.svg";
 import map from "../assets/images/carbon_location.svg";
 
 function AboutMe() {
+  const workExperience = [
+    {
+      designationTitle: "Junior Web Developer",
+      work: "Full Time",
+      projecticon: "/src/assets/images/projecticon.svg",
+      name: "Dr. Rajkumar's Learning App",
+      city: "Bengaluru",
+      date: "Sep 2021 - Dec 2021",
+    },
+    {
+      designationTitle: "Web Development Intern",
+      work: "Internship",
+      projecticon: "/src/assets/images/projecticon.svg",
+      name: "Dr. Rajkumar's Learning App",
+      city: "Bengaluru",
+      date: "Sep 2022 - Dec 2023",
+    },
+    {
+      designationTitle: "SEO / SEM Specialist",
+      work: "Internship",
+      projecticon: "/src/assets/images/projecticon.svg",
+      name: "Dr. Rajkumar's Learning App",
+      city: "Bengaluru",
+      date: "Sep 2021 - Dec 2021",
+    },
+  ];
+
+  const education = [
+    {
+      educationTitle: "Bachelor in Electronics & Communication",
+      projecticons: "/src/assets/images/projecticon.svg",
+      names: "Bangalore Instutute of Technology",
+      cityname: "Bengaluru",
+      dates: "Sep 2021 - Dec 2021",
+    },
+    {
+      educationTitle: "Bachelor in Electronics & Communication",
+      projecticons: "/src/assets/images/projecticon.svg",
+      names: "Bangalore Instutute of Technology",
+      cityname: "Bengaluru",
+      dates: "Sep 2021 - Dec 2021",
+    },
+  ];
   return (
     <>
       <main className="main-content">
@@ -20,136 +63,100 @@ function AboutMe() {
             <div className="work-experience">
               <h2 className="section-title">Work Experience</h2>
               <ul>
-                <li>
-                  <div className="designation-wrapper">
-                    <p className="designation-title">Junior Web Developer</p>
-                    <button className="btn-green">Full Time</button>
-                  </div>
-                  <div className="project-details">
-                    <div className="name-city-wrapper">
-                      <p>
-                        <span>
-                          <img src={projecticon} />
-                        </span>
-                        Dr. Rajkumar's Learning App
-                      </p>
-                      <p>
-                        <span>
-                          <img src={map} />
-                        </span>
-                        Bengaluru
-                      </p>
-                    </div>
+                {workExperience.map((item) => {
+                  const {
+                    designationTitle,
+                    work,
+                    projecticon,
+                    name,
+                    city,
+                    date,
+                  } = item;
+                  return (
+                    <>
+                      <li>
+                        <div className="designation-wrapper">
+                          <p className="designation-title">
+                            {designationTitle}
+                          </p>
+                          <button className="btn-green">{work}</button>
+                        </div>
+                        <div className="project-details">
+                          <div className="name-city-wrapper">
+                            <p>
+                              <span>
+                                <img src={projecticon} />
+                              </span>
+                              {name}
+                            </p>
+                            <p>
+                              <span>
+                                <img src={map} />
+                              </span>
+                              {city}
+                            </p>
+                          </div>
 
-                    <div className="date-wrapper">
-                      <p>
-                        <span>
-                          <img src={calender} />
-                        </span>
-                        Sep 2021 - Dec 2021
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="designation-wrapper">
-                    <p className="designation-title">Web Development Intern</p>
-                    <button className="btn-green">Internship</button>
-                  </div>
-                  <div className="project-details">
-                    <div className="name-city-wrapper">
-                      <p>
-                        <span>
-                          <img src={projecticon} />
-                        </span>
-                        Dr. Rajkumar's Learning App
-                      </p>
-                      <p>
-                        <span>
-                          <img src={map} />
-                        </span>
-                        Bengaluru
-                      </p>
-                    </div>
-
-                    <div className="date-wrapper">
-                      <p>
-                        <span>
-                          <img src={calender} />
-                        </span>
-                        Sep 2021 - Dec 2021
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="designation-wrapper">
-                    <p className="designation-title">SEO / SEM Specialist</p>
-                    <button className="btn-green">Internship</button>
-                  </div>
-                  <div className="project-details">
-                    <div className="name-city-wrapper">
-                      <p>
-                        <span>
-                          <img src={projecticon} />
-                        </span>
-                        HAAPS
-                      </p>
-                      <p>
-                        <span>
-                          <img src={map} />
-                        </span>
-                        Bengaluru
-                      </p>
-                    </div>
-
-                    <div className="date-wrapper">
-                      <p>
-                        <span>
-                          <img src={calender} />
-                        </span>
-                        Sep 2021 - Dec 2021
-                      </p>
-                    </div>
-                  </div>
-                </li>
+                          <div className="date-wrapper">
+                            <p>
+                              <span>
+                                <img src={calender} />
+                              </span>
+                              {date}
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </>
+                  );
+                })}
               </ul>
             </div>
 
             <div className="work-experience">
-              <h2 className="section-title">Work Experience</h2>
+              <h2 className="section-title">Education</h2>
               <ul>
-                <li>
-                  <div className="designation-wrapper">
-                    <p className="designation-title">Junior Web Developer</p>
-                    <button className="btn-green">Full Time</button>
-                  </div>
-                  <div className="project-details">
-                    <div className="name-city-wrapper">
-                      <p>
-                        <span>
-                          <img src={projecticon} />
-                        </span>
-                        Dr. Rajkumar's Learning App
-                      </p>
-                      <p>
-                        <span>
-                          <img src={map} />
-                        </span>
-                        Bengaluru
-                      </p>
-                    </div>
-                    <div className="date-wrapper">
-                      <p>
-                        <span>
-                          <img src={calender} />
-                        </span>
-                        Sep 2021 - Dec 2021
-                      </p>
-                    </div>
-                  </div>
-                </li>
-              
+                {education.map((item) => {
+                  const {
+                    educationTitle,projecticons,names,cityname,datesm
+                  } = item;
+                  return(
+                  <>
+                    <li>
+                      <div className="designation-wrapper">
+                        <p className="designation-title">
+                          {educationTitle}
+                        </p>
+                        <button className="btn-green">Full Time</button>
+                      </div>
+                      <div className="project-details">
+                        <div className="name-city-wrapper">
+                          <p>
+                            <span>
+                              <img src={projecticons} />
+                            </span>
+                            {names}
+                          </p>
+                          <p>
+                            <span>
+                              {/* <img src={map} /> */}
+                            </span>
+                            {cityname}
+                          </p>
+                        </div>
+                        <div className="date-wrapper">
+                          <p>
+                            <span>
+                              <img src={datesm} />
+                            </span>
+                            Sep 2021 - Dec 2021
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </>
+                  );
+                })}
               </ul>
             </div>
           </div>

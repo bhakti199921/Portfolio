@@ -2,19 +2,22 @@ import github from "../assets/images/github.svg";
 import twitter from "../assets/images/twitter.svg";
 import linkdin from "../assets/images/social_linkedin.svg";
 import { Link } from "react-router-dom";
-import "../assets/scss/_base.scss";
+import "../assets/scss/component/_base.scss";
 import "../assets/scss/component/_footer.scss";
+import logofooter from"../assets/images/logo-footer.svg";
 
 function Footer() {
   return (
     <>
-      <Footer>
+      <footer className="footer">
         <section className="container">
         <div className="footer-content">
-          <div>Logo</div>
+          <div>
+            <img src={logofooter} alt="logofooter" className="footer-logo"/>
+          </div>
           <div className="footer-bottom-right">
-            <p>+91 12345 09876</p>
-            <p>info@example.com</p>
+            <p className="footer-bottom-right-contactdetails">+91 12345 09876</p>
+            <p className="footer-bottom-right-contactdetails">info@example.com</p>
             <ul className="footer-img-wrapper">
               <li>
                 <Link to="/">
@@ -37,19 +40,19 @@ function Footer() {
         <div className="footer-bottom">
             <ul>
                 <li>
-                    <Link>Home</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link>About</Link>
+                    <Link to="/about">About</Link>
                 </li>
                 <li>
-                    <Link>Home</Link>
+                <Link to="/techstack">Tech Stack</Link>
                 </li>
                 <li>
-                    <Link>About</Link>
+                <Link to="/project">Projects</Link>
                 </li>
                 <li>
-                    <Link>Home</Link>
+                <Link to="/contactus">Contact</Link>
                 </li>
             </ul>
             <div>
@@ -57,7 +60,7 @@ function Footer() {
             </div>
         </div>
         </section>
-      </Footer>
+      </footer>
     </>
   );
 }

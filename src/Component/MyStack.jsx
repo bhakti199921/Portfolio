@@ -14,6 +14,7 @@ import github from "../assets/images/github.svg";
 function MyStack() {
   return (
     <>
+    <section className="container">
       <div className="mystack">
         <h2 className="section-title">My Tech Stack</h2>
         <p className="section-subtitle">
@@ -21,45 +22,46 @@ function MyStack() {
         </p>
         <ul className="mystack-list">
           <li>
-            <img src={html} alt="" />
+            <img src={html} alt="html" height={60} width={60} />
           </li>
           <li>
-            <img src={css} alt="" />
+            <img src={css} alt="css" height={60} width={60} />
           </li>
           <li>
-            <img src={js} alt="" />
+            <img src={js} alt="js" height={60} width={60} />
           </li>
           <li>
-            <img src={react} alt="" />
+            <img src={react} alt="react" height={60} width={60} />
           </li>
           <li>
-            <img src={info} alt="" />
+            <img src={info} alt="info" height={60} width={60} />
           </li>
           <li>
-            <img src={bootstrap} alt="" />
+            <img src={bootstrap} alt="bootstrap" height={60} width={60} />
           </li>
         </ul>
         <ul className="mystack-list">
           <li>
-            <img src={tailwind} alt="" />
+            <img src={tailwind} alt="tailwind" height={60} width={60} />
           </li>
           <li>
-            <img src={sass} alt="" />
+            <img src={sass} alt="sass" height={60} width={60}/>
           </li>
           <li>
-            <img src={git} alt="" />
+            <img src={git} alt="git" height={60} width={60}/>
           </li>
           <li>
-            <img src={cib_greensock} alt="" />
+            <img src={cib_greensock} alt="cib_greensock" height={60} width={60} />
           </li>
           <li>
-            <img src={vscode} alt="" />
+            <img src={vscode} alt="vscode" height={60} width={60}/>
           </li>
           <li>
-            <img src={github} alt="" />
+            <img src={github} alt="github" height={60} width={60}/>
           </li>
         </ul>
       </div>
+      </section>
     </>
   );
 }

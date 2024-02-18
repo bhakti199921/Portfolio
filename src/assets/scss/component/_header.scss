@@ -1,12 +1,19 @@
 .header{
-    padding: 10px;
-    position: fixed;
+    padding: 15px 0;
+    position: sticky;
     top: 0;
     width: 100%;
     background-color: white;
     &-content{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    &-logo{
+        width: 90px;
+        height: 55px;
+        object-fit: contain;
     }
 
     a{

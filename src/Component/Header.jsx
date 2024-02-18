@@ -3,6 +3,7 @@ import "../assets/scss/component/_header.scss";
 import github from "../assets/images/github.svg";
 import twitter from "../assets/images/twitter.svg";
 import linkdin from "../assets/images/social_linkedin.svg";
+import logo from "../assets/images/logo.png";
 
 function Header() {
   return (
@@ -11,7 +12,9 @@ function Header() {
         <div className="container">
           <div className="header-content">
             <h1>
-              <Link to="/">Logo</Link>
+              <Link to="/">
+                <img src={logo} className="header-logo"/>
+              </Link>
             </h1>
 
             <ul className="nav-list">
@@ -19,13 +22,13 @@ function Header() {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/">Portfolio</Link>
+                <Link to="/techstack">Tech Stack</Link>
               </li>
               <li>
-                <Link to="/">Contact</Link>
+                <Link to="/project">Projects</Link>
               </li>
               <li>
-                <Link to="/">Tech Stack</Link>
+                <Link to="/contactus">Contact</Link>
               </li>
               <li>
                 <Link to="/">
