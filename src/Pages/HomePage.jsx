@@ -1,7 +1,7 @@
 // import React from 'react'
-import "../assets/scss/_style.scss";
-import "../assets/scss/component/_base.scss";
-import "../assets/scss/_homePage.scss";
+// import "../assets/scss/_style.scss";
+// import "../assets/scss/component/_base.scss";
+// import "../assets/scss/_homePage.scss";
 import profileimg from "../assets/images/profile.png";
 import MyStack from "../Component/MyStack";
 import Project from "../Component/Project";

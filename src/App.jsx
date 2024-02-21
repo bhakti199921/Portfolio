@@ -2,7 +2,8 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import { BrowserRouter } from 'react-router-dom'
-import './App.css'
+import "/src/assets/scss/style.scss";
+// import './App.css'
 import Routing from './Routing'
 import Header from './Component/Header'
 
