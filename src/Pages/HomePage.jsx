@@ -22,8 +22,8 @@ function HomePage() {
                   <br />I build things for web
                 </h2>
               </div>
-              <div>
-                <img src={profileimg} alt="profileimg" className="hero-banner_profileimg" />
+              <div className="hero-banner_profileimg">
+                <img src={profileimg} alt="profileimg" className="" />
               </div>
             </div>
           </div>

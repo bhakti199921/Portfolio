@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import "../assets/scss/component/_about.scss";
+// import "../assets/scss/component/_about.scss";
 // import projecticon from "../assets/images/projecticon.svg";
 import calender from "../assets/images/calendar-dates.svg";
 import map from "../assets/images/carbon_location.svg";
