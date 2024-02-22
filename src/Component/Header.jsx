@@ -22,20 +22,20 @@ function Header() {
   //   }
   // }, []);
 
-  function darkTheme() {
-    const toogleId = document.getElementById("themeMode");
-    let element = document.body;
+  // function darkTheme() {
+  //   const toogleId = document.getElementById("themeMode");
+  //   let element = document.body;
 
-    if (toogleId.checked == true) {
-      element.classList.add("darkmode");
-      localStorage.setItem("darkmode", true);
-    } else {
-      if (element.className.includes("darkmode")) {
-        element.classList.remove("darkmode");
-        localStorage.setItem("darkmode", false);
-      }
-    }
-  }
+  //   if (toogleId.checked == true) {
+  //     element.classList.add("darkmode");
+  //     localStorage.setItem("darkmode", true);
+  //   } else {
+  //     if (element.className.includes("darkmode")) {
+  //       element.classList.remove("darkmode");
+  //       localStorage.setItem("darkmode", false);
+  //     }
+  //   }
+  // }
 
   // function forToggle() {
   //   console.log("hello");
@@ -111,14 +111,14 @@ function Header() {
                     <img src={linkdin} alt="linkdin" className="header-img" />
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <div className="toggle-dark">
                     <label className="switch" onClick={darkTheme}>
                       <input type="checkbox" id="themeMode" />
                       <span className="slider round"></span>
                     </label>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="mobile-menu" onClick={togglemenu}>

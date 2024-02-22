@@ -45,6 +45,11 @@
 
     .close-img {
       text-align: right;
+      display: none;
+
+      @include breakpoint(mobile-max){
+        display: block;
+      }
 
       img {
         height: 20px;
