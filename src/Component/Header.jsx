@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 // import "../assets/scss/_style.scss";
-import "../assets/scss/component/_header.scss";
+// import "../assets/scss/component/_header.scss";
 import github from "../assets/images/github.svg";
 import twitter from "../assets/images/twitter.svg";
 import linkdin from "../assets/images/social_linkedin.svg";
@@ -35,19 +35,28 @@ function Header() {
   }
 }
 
-function forToggle() {
-  console.log("hello");
-  if (localStorage.getItem("darkmode") === "true") {
-    document.getElementById("themeMode").checked = true;
-  } else {
-    document.getElementById("themeMode").checked = false;
-  }
-}
+// function forToggle() {
+//   console.log("hello");
+//   if (localStorage.getItem("darkmode") === "true") {
+//     document.getElementById("themeMode").checked = true;
+//   } else {
+//     document.getElementById("themeMode").checked = false;
+//   }
+// }
 
-window.onload = function() {
-  console.log("hllo");
-  forToggle();
-};
+// window.onload = function() {
+//   console.log("hllo");
+//   forToggle();
+// };
+
+const togglemenu = () =>{ 
+  console.log("hello");
+  let sidebar = document.getElementById("mobilenav");
+  let body2 = document.getElementById("root");
+  
+  sidebar.classList.add("togglenavbar");
+  body2.classList.add("show-overlay");
+}
 
   return (
     <>
@@ -60,7 +69,7 @@ window.onload = function() {
               </Link>
             </h1>
 
-            <ul className="nav-list">
+            <ul className="nav-list" id="mobilenav">
               <li>
                 <Link to="/about">About</Link>
               </li>
@@ -97,6 +106,12 @@ window.onload = function() {
                 </div>
               </li>
             </ul>
+
+            <div className="mobile-menu" 
+            onClick={togglemenu}
+            >
+              <span>menu</span>
+            </div>
 
           </div>
         </div>

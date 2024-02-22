@@ -2,8 +2,8 @@ import github from "../assets/images/github.svg";
 import twitter from "../assets/images/twitter.svg";
 import linkdin from "../assets/images/social_linkedin.svg";
 import { Link } from "react-router-dom";
-import "../assets/scss/component/_base.scss";
-import "../assets/scss/component/_footer.scss";
+// import "../assets/scss/component/_base.scss";
+// import "../assets/scss/component/_footer.scss";
 import logofooter from"../assets/images/logo-footer.svg";
 
 function Footer() {
