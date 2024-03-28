@@ -9,7 +9,7 @@ function Project() {
       description:
         "This is sample project description random things are here in description This is sample project lorem ipsum generator fordummy content",
       techUsed: "HTML , JavaScript, SASS, React",
-      imgUrl: "/src/assets/images/project.svg",
+      imgUrl: "/src/assets/images/project.png",
       livePreview:"https://bhaktir-portfolio.netlify.app/",
       viewCode:"https://github.com/bhakti199921/Portfolio",
      
